@@ -4,6 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Profil-faker</title>
-	<style type="text/css" href="assets/css/style.ccs"></style>
+	
+	<style>
+		body {
+			background-image:url("<?php echo $faker -> imageUrl($width = 640, $height = 480);?>");
+		}
+	</style>
 </head>
+
 <body>
