@@ -1,16 +1,8 @@
 <?php
 require_once 'vendor/fzaninotto/faker/src/autoload.php';
 $faker = Faker\Factory::create();
+include "views/head.php";
 ?>
-
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Profil-faker</title>
-</head>
-<body>
 	
 	<?php
 		for ($i=0; $i<10; $i++) {
@@ -29,6 +21,6 @@ $faker = Faker\Factory::create();
 	?>	
 	</p>
 
-			
-</body>
-</html>
+<?php
+	include "views/body.php";
+?>
