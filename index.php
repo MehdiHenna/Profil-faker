@@ -11,16 +11,24 @@ $faker = Faker\Factory::create();
 	<title>Profil-faker</title>
 </head>
 <body>
-	<p>
+	
 	<?php
-		echo $faker->name;
+		for ($i=0; $i<10; $i++) {
+			echo $faker->name, "\n";
+		}
 	?>
-	</p>
+	
 	<p>
 	<?php	
 		echo $faker->address;
 	?>	
 	</p>
+	<p>
+	<?php
+		echo $faker->text;
+	?>	
+	</p>
+
 			
 </body>
 </html>
